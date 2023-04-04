@@ -7,6 +7,15 @@ import (
 )
 
 func main() {
+
+	type Interface struct {
+		Name                 string
+		Description          string
+		IntfType             string
+		Enabled              bool
+		LinkUpDownTrapEnable int
+	}
+
 	ietf := Interface{
 		Name:                 "eth0",
 		Description:          "Ethernet interface",
