@@ -1,13 +1,4 @@
-package ietfInterface
-
-import (
-	"time"
-)
-
-type Interfaces struct {
-	NwInterface     []Interface
-	InterfacesState []InterfaceState
-}
+package ietfInterfaces
 
 type Interface struct {
 	Name                 string
@@ -15,15 +6,4 @@ type Interface struct {
 	IntfType             string
 	Enabled              bool
 	LinkUpDownTrapEnable int
-}
-
-type InterfaceState struct {
-	Name        string
-	IntfType    string
-	AdminStatus int
-	OperStatus  int
-	LastChange  time.Time
-	IfIndex     int
-	PhysAddress string
-	Speed       int64
 }
